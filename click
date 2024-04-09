@@ -1,0 +1,2 @@
+cd /Users/aris/Documents/4-fumio/van/action
+python3 /Users/aris/Documents/4-fumio/van/action/print.py > /Users/aris/Documents/4-fumio/van/STATIONTOSTATION.txt
