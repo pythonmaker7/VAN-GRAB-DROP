@@ -1,0 +1,36 @@
+1 monastiraki #1
+GRAB | 3, 4, 5, 8, 24, 28
+DROP | 
+
+2 kypseli #1
+GRAB | 2, 12, 36
+DROP | 3
+
+3 glyfada #1
+GRAB | 6, 7, 13, 20, 27, 31
+DROP | 5, 24, 28
+
+4 chalandri #1
+GRAB | 1, 10, 11, 23
+DROP | 4, 6
+
+5 peristeri #1
+GRAB | 
+DROP | 8, 12, 13, 23
+
+6 kifisia #1
+GRAB | 25, 33, 34, 35
+DROP | 27
+
+3 glyfada #2
+GRAB | 
+DROP | 35
+
+2 kypseli #2
+GRAB | 
+DROP | 1, 11, 20, 25, 33, 34
+
+1 monastiraki #2
+GRAB | 
+DROP | 2, 7, 10, 31, 36
+
