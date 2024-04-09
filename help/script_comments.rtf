@@ -1,0 +1,80 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19480\viewh11740\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs32 \cf0 #1	all_hubs (dict)
+\f1\b0\fs24 \
+\
+first create it empty\
+\
+then for each hub:\
+	iterate garms 4th column (current hub)\
+	if the cell name of garms.column4 == hubs.column1\
+	then add garm_id to all_hubs dictionary\
+\
+\
+\
+\
+\
+
+\f0\b\fs32 #2 	item_hub_outer
+\f1\b0\fs24 \
+\
+i want item(number type) : hub(number type)\
+\
+#2.1    take a json file with the orders in form item-hub\
+#2.2    because ALL JSON KEYS ARE STRINGS change them to numbers\
+\
+\
+\
+\
+\
+
+\f0\b\fs32 #3 	item_hub_inner (dict)
+\f1\b0\fs24 \
+\
+all the items and the hubs they will be inner-move to\
+\
+#3.1    create new copy of dictionary\
+\
+so that i can pop out from the new one, the items that are\
+already in the right place\
+\
+#3.2    for every item that is ordered\
+#3.3    and for every hub\
+#3.4    if that hub has the same name as the hub that the item must go\
+#3.5    and if that item belongs to that hub already\
+#3.6    delete the key:value pair from my new dictionary\
+\
+\
+\
+\
+\
+
+\f0\b\fs32 #4 	item_hub_stock (dict)
+\f1\b0\fs24 \
+\
+all the items i will inner-move and the hubs they currently are\
+i read the excel all_tables.garms tab\
+and check if i want this from the item_hub_inner dictionary\
+\
+#4.1    i use openpyxl to open workbook and sheet\
+#4.2    read the rows from first (without header) to last that has data\
+#4.3    if the item_id in excel is also in the keys of the to-be-moved dict\
+#4.4    append the item_hub_stock dict w/ that key:value pair\
+\
+\
+\
+\
+\
+
+\f0\b\fs32 #5 	item_hub_hub (dict)
+\f1\b0\fs24 \
+\
+combine the two previous dictionaries to one\
+rgat looks like\
+\{item 1: [from hub 3, to hub 4,\
+ item 2: [from hub 5, to hub 6\}}
