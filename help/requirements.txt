@@ -1,0 +1,4 @@
+openpyxl==3.0.9
+json5==0.9.6
+geopy==2.2.0
+python==3.9.1
